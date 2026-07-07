@@ -206,7 +206,7 @@ medical-insurance-cost-prediction/
 │   └── insurance.csv
 ├── notebooks/
 │   └── Medical_Insurance_Cost_Prediction.ipynb
-├── models/
+├── model/
 │   └── insurance_model.pkl
 ├── images/
 │   ├── charges_distribution.png
