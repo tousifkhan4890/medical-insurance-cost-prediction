@@ -73,27 +73,27 @@ To run the notebook:
 ### 4.1 Distribution of Charges
 The target variable `charges` is **right-skewed** — most policyholders pay under $15,000, while a smaller group pays $40,000+.
 
-![Distribution of Charges](pic/charges_distribution.png)
+![Distribution of Charges](images/charges_distribution.png)
 
 ### 4.2 Smoker vs Non-Smoker Charges
 Smokers pay dramatically more than non-smokers on average — this turned out to be the single strongest predictor in the dataset.
 
-![Smoking vs Charges](pic/Smoking_VS_Charges.png)
+![Smoking vs Charges](images/smoking_vs_charges.png)
 
 ### 4.3 Age vs Charges
 Charges increase with age, and the scatter plot clearly separates into two distinct upward bands — smokers form a much higher band than non-smokers.
 
-![Age vs Charges](pic/age_vs_charges.png)
+![Age vs Charges](images/age_vs_charges.png)
 
 ### 4.4 BMI vs Charges
 BMI alone has only a mild effect on charges, but this effect becomes much stronger specifically among smokers — high BMI + smoking is the costliest combination.
 
-![BMI vs Charges](pic/bmi_vs_charges.png)
+![BMI vs Charges](images/bmi_vs_charges.png)
 
 ### 4.5 Correlation Heatmap
 Numeric correlation shows `age` and `bmi` positively correlated with `charges`, but this heatmap alone understates smoking's importance since it only captures numeric columns.
 
-![Correlation Heatmap](pic/correlation_heatmap.png)
+![Correlation Heatmap](images/correlation_heatmap.png)
 
 **EDA Summary:**
 - Smoking status is the dominant factor affecting charges.
@@ -142,18 +142,18 @@ model.fit(X_train, y_train)
 ### 7.2 Actual vs Predicted Charges (Baseline Model)
 The baseline model systematically overpredicted mid-cost smokers and underpredicted the highest-cost obese smokers.
 
-![Actual vs Predicted Charges (Basic Model)](pic/actual_vs_predicted_basics.png)
+![Actual vs Predicted Charges (Basic Model)](images/actual_vs_predicted_basic.png)
 
 ### 7.3 Actual vs Predicted Charges (Improved Model)
 After adding interaction features, predictions cluster much more tightly around the ideal diagonal line.
 
-![Actual vs Predicted Charges (Improved Model)](pic/actual_vs_predictedf_improved.png)
+![Actual vs Predicted Charges (Improved Model)](images/actual_vs_predicted_improved.png)
 
 ### 7.4 Residual Distribution Comparison
 The improved model's residuals (prediction errors) are more tightly centered around zero compared to the baseline model, confirming reduced bias.
 
 
-![Residual Comparison](pic/residual_comparison.png)
+![Residual Comparison](images/residual_comparison.png)
 
 ### 7.5 Feature Importance (Improved Model)
 
